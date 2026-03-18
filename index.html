@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LF Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Hoja de estilos externa -->
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="icon" type="image/png" href="src/images/favicon.png">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-container container">
+            <a href="#" class="logo"><span class="logo-text">LF</span><span class="logo-dot">.</span></a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#about">Sobre mí</a></li>
+                    <li class="nav-item"><a href="#technologies">Mis tecnologías</a></li>
+                    <li class="nav-item"><a href="#experience">Experiencia</a></li>
+                    <li class="nav-item"><a href="#goals">Propósitos</a></li>
+                    <li class="nav-item"><a href="#projects">Mis Proyectos</a></li>
+                    <li class="nav-item"><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button id="theme-toggle" class="btn-theme-toggle" aria-label="Cambiar tema">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="22" height="22">
+                        <path fill="#FFD43B" d="M361.5 1.2c5 2.1 8.5 6.6 9.6 11.9L391 121l107.9 19.8c5.3 1 9.8 4.6 11.9 9.6s1.5 10.7-1.6 15.2L446.9 256l62.3 90.3c3.1 4.5 3.7 10.2 1.6 15.2s-6.6 8.6-11.9 9.6L391 391 371.1 498.9c-1 5.3-4.6 9.8-9.6 11.9s-10.7 1.5-15.2-1.6L256 446.9l-90.3 62.3c-4.5 3.1-10.2 3.7-15.2 1.6s-8.6-6.6-9.6-11.9L121 391 13.1 371.1c-5.3-1-9.8-4.6-11.9-9.6s-1.5-10.7 1.6-15.2L65.1 256 2.8 165.7c-3.1-4.5-3.7-10.2-1.6-15.2s6.6-8.6 11.9-9.6L121 121 140.9 13.1c1-5.3 4.6-9.8 9.6-11.9s10.7-1.5 15.2 1.6L256 65.1l90.3-62.3c4.5-3.1 10.2-3.7 15.2-1.6zM192 256a64 64 0 1 0 128 0 64 64 0 1 0 -128 0z"/>
+                    </svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="20" height="20">
+                        <path fill="currentColor" d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section id="hero" class="hero">
+        <div class="hero-container container">
+            <div class="hero-content">
+                <h1 class="hero-title"><span class="greeting">¡Hola! Soy</span><br /><span class="name">L F</span></h1>
+                <span class="hero-subtitle">Desarrolladora Web Profesional</span>
+                <p class="hero-description">Estrategia, diseño y código. Creamos junt@s la web que tu proyecto merece.</p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary">Hablemos de tu proyecto</a>
+                    <a href="#about" class="btn btn-outline">Conóceme más</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="blob-container">
+                    <div class="profile-placeholder"><i class="fas fa-code"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Sobre mí</h2>
+            <div class="about-content glass-card">
+                <img src="src/images/profile.png" alt="Foto de Lorena" class="profile-img">
+                <div class="about-text">
+                    <p>¡Hola! Soy Lorena, una apasionada de la tecnología con raíces canarias y la convicción de que las mejores ideas nacen de una buena conversación. Mi enfoque no se limita a programar; me detengo a escucharte para que definamos juntos una estrategia visual y funcional que represente tu esencia. El resultado es una web a medida, donde la personalización y la eficiencia técnica se unen para hacer crecer tu proyecto digital.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item"><span class="stat-number">2+</span><span class="stat-label">Años de experiencia</span></div>
+                    <div class="stat-item"><span class="stat-number">15+</span><span class="stat-label">Proyectos</span></div>
+                    <div class="stat-item"><span class="stat-number">100%</span><span class="stat-label">Compromiso</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TECHNOLOGIES -->
+    <section id="technologies" class="technologies">
+        <div class="container">
+            <h2>Mis Tecnologías</h2>
+            <p class="section-desc">Las herramientas y lenguajes que utilizo para construir soluciones digitales.</p>
+            <div class="tech-grid">
+                <div class="tech-category glass-card">
+                    <h3>Frontend</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Angular</span><span>90%</span></div>
+                            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 90%;"></div></div>
+                        </div>
+                        <div class="skill-item" style="margin-top:1rem;">
+                            <div class="skill-info"><span>TypeScript</span><span>85%</span></div>
+                            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 85%;"></div></div>
+                        </div>
+                        <div class="skill-item" style="margin-top:1rem;">
+                            <div class="skill-info"><span>HTML</span><span>85%</span></div>
+                            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 85%;"></div></div>
+                        </div>
+                        <div class="skill-item" style="margin-top:1rem;">
+                            <div class="skill-info"><span>CSS</span><span>85%</span></div>
+                            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 85%;"></div></div>
+                        </div>
+                        <div class="skill-item" style="margin-top:1rem;">
+                            <div class="skill-info"><span>Bootstrap</span><span>85%</span></div>
+                            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 85%;"></div></div>
+                        </div>
+                        <div class="skill-item" style="margin-top:1rem;">
+                            <div class="skill-info"><span>Tailwind CSS</span><span>85%</span></div>
+                            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 85%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-category glass-card">
+                    <h3>Backend y Database</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Node.js</span><span>80%</span></div>
+                            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 80%;"></div></div>
+                        </div>
+                        <div class="skill-item" style="margin-top:1rem;">
+                            <div class="skill-info"><span>PostgreSQL</span><span>75%</span></div>
+                            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 75%;"></div></div>
+                        </div>
+                        <div class="skill-item" style="margin-top:1rem;">
+                            <div class="skill-info"><span>DBeaver</span><span>75%</span></div>
+                            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 75%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-category glass-card">
+                    <h3>Herramientas</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Git</span><span>80%</span></div>
+                            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 80%;"></div></div>
+                        </div>
+                        <div class="skill-item" style="margin-top:1rem;">
+                            <div class="skill-info"><span>GitHub</span><span>75%</span></div>
+                            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 80%;"></div></div>
+                        </div>
+                        <div class="skill-item" style="margin-top:1rem;">
+                            <div class="skill-info"><span>GitLab</span><span>75%</span></div>
+                            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 60%;"></div></div>
+                        </div>
+                        <div class="skill-item" style="margin-top:1rem;">
+                            <div class="skill-info"><span>Docker</span><span>75%</span></div>
+                            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 60%;"></div></div>
+                        </div>
+                        <div class="skill-item" style="margin-top:1rem;">
+                            <div class="skill-info"><span>Jira</span><span>75%</span></div>
+                            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 60%;"></div></div>
+                        </div>
+                        <div class="skill-item" style="margin-top:1rem;">
+                            <div class="skill-info"><span>VScode</span><span>75%</span></div>
+                            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 90%;"></div></div>
+                        </div>
+                        <div class="skill-item" style="margin-top:1rem;">
+                            <div class="skill-info"><span>Antigravity</span><span>75%</span></div>
+                            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 90%;"></div></div>
+                        </div>
+                        <div class="skill-item" style="margin-top:1rem;">
+                            <div class="skill-info"><span>Postman</span><span>75%</span></div>
+                            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 75%;"></div></div>
+                        </div>
+                        <div class="skill-item" style="margin-top:1rem;">
+                            <div class="skill-info"><span>Zoom</span><span>75%</span></div>
+                            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 90%;"></div></div>
+                        </div>
+                        <div class="skill-item" style="margin-top:1rem;">
+                            <div class="skill-info"><span>Teams</span><span>75%</span></div>
+                            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 95%;"></div></div>
+                        </div>
+                        <div class="skill-item" style="margin-top:1rem;">
+                            <div class="skill-info"><span>Google Meet</span><span>75%</span></div>
+                            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 90%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2>Mi Experiencia</h2>
+            <div class="timeline clearfix">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-date">Ene 2023 - Actualidad</div>
+                        <h3 class="timeline-title">Fullstack Developer</h3>
+                        <h4 class="timeline-company">Tech Company</h4>
+                        <p class="timeline-desc">Desarrollo de aplicaciones web utilizando Angular y Node.js.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-date">Jun 2021 - 2023</div>
+                        <h3 class="timeline-title">Frontend Developer</h3>
+                        <h4 class="timeline-company">Web Agency</h4>
+                        <p class="timeline-desc">Creación de interfaces de usuario modernas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GOALS -->
+    <section id="goals" class="goals">
+        <div class="container">
+            <h2>Mis Propósitos</h2>
+            <div class="goals-container">
+                <div>
+                    <h3 class="column-title"><i class="fas fa-briefcase"></i> Profesionales</h3>
+                    <div class="goal-card glass-card">
+                        <div class="goal-icon"><i class="fas fa-rocket"></i></div>
+                        <div>
+                            <h4>Escucha Activa y Empatía</h4>
+                            <p>Tu visión es el punto de partida. Me sumerjo en tus ideas y necesidades antes de tocar una sola línea de código, asegurando que el resultado final sea un reflejo fiel de tu identidad y objetivos.</p>
+                        </div>
+                    </div>
+                    <div class="goal-card glass-card">
+                        <div class="goal-icon"><i class="fas fa-rocket"></i></div>
+                        <div>
+                            <h4>Estrategia con Propósito</h4>
+                            <p>No diseño por diseñar. Defino una estructura donde lo visual y lo funcional caminan de la mano, creando una hoja de ruta estratégica para que cada clic del usuario tenga un sentido y un resultado.</p>
+                        </div>
+                    </div>
+                    <div class="goal-card glass-card">
+                        <div class="goal-icon"><i class="fas fa-rocket"></i></div>
+                        <div>
+                            <h4>Personalización Artesanal</h4>
+                            <p>Adiós a las plantillas genéricas. Cada proyecto es único; por eso, aplico mi pasión por el detalle para construir experiencias personalizadas que diferencien tu marca en un entorno digital saturado.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="column-title"><i class="fas fa-user-astronaut"></i> Personales</h3>
+                    <div class="goal-card glass-card">
+                        <div class="goal-icon"><i class="fas fa-star"></i></div>
+                        <div>
+                            <h4>Aprendizaje Continuo (Evolución Tecnológica)</h4>
+                            <p>Mantenerme a la vanguardia. En un sector que cambia cada día, mi compromiso es dedicar tiempo constante a la formación en nuevas tecnologías y lenguajes. Mi objetivo es que las soluciones que ofrezco hoy no solo sean actuales, sino que estén preparadas para el futuro.</p>
+                        </div>
+                    </div>
+                    <div class="goal-card glass-card">
+                        <div class="goal-icon"><i class="fas fa-star"></i></div>
+                        <div>
+                            <h4>Divulgación y Claridad</h4>
+                            <p>Hacer lo complejo, sencillo. Me propongo eliminar las barreras técnicas entre el código y el cliente. Mi meta es que te sientas parte del proceso tecnológico, comunicando cada paso de forma transparente para que entiendas perfectamente cómo funciona tu herramienta digital.</p>
+                        </div>
+                    </div>
+                    <div class="goal-card glass-card">
+                        <div class="goal-icon"><i class="fas fa-star"></i></div>
+                        <div>
+                            <h4>Impacto Local con Alcance Global</h4>
+                            <p>Potenciar el talento desde Canarias. Mi propósito es demostrar que desde nuestras islas se puede ofrecer un servicio de desarrollo web de primer nivel. Busco ayudar a negocios locales y globales a destacar, aportando esa calidez y dedicación que nos caracteriza en cada proyecto que firmo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Mis Proyectos</h2>
+            <div class="carousel-wrapper">
+                <button id="carousel-prev" class="carousel-btn prev-btn" aria-label="Proyecto anterior"><i class="fas fa-chevron-left"></i></button>
+                <div class="carousel-track" id="project-carousel">
+                    <!-- Proyecto de ejemplo -->
+                    <div class="project-card">
+                    <div class="image-wrapper"><img src="src/images/burger.png" alt=""></div>
+                    <h3>Proyecto 1</h3>
+                    <p>Diseño corporativo y funcional.</p>
+                </div>
+                <div class="project-card">
+                    <div class="image-wrapper"><img src="src/images/cafe.png" alt=""></div>
+                    <h3>Proyecto 2</h3>
+                    <p>Minimalista y rápido.</p>
+                </div>
+                <div class="project-card">
+                    <div class="image-wrapper"><img src="src/images/discoteca.png" alt=""></div>
+                    <h3>Proyecto 3</h3>
+                    <p>Brutalismo web en acción.</p>
+                </div>
+                <div class="project-card">
+                    <div class="image-wrapper"><img src="src/images/dulceria.png" alt=""></div>
+                    <h3>Proyecto 4</h3>
+                    <p>Brutalismo web en acción.</p>
+                </div>
+                <div class="project-card">
+                    <div class="image-wrapper"><img src="src/images/masaje.png" alt=""></div>
+                    <h3>Proyecto 5</h3>
+                    <p>Brutalismo web en acción.</p>
+                </div>
+                <div class="project-card">
+                    <div class="image-wrapper"><img src="src/images/panaderia.png" alt=""></div>
+                    <h3>Proyecto 6</h3>
+                    <p>Brutalismo web en acción.</p>
+                </div>
+                <div class="project-card">
+                    <div class="image-wrapper"><img src="src/images/lgtbi_es.png" alt=""></div>
+                    <h3>Proyecto 7</h3>
+                    <p>Brutalismo web en acción.</p>
+                </div>
+                <div class="project-card">
+                    <div class="image-wrapper"><img src="src/images/ecommerce.png" alt=""></div>
+                    <h3>Proyecto 8</h3>
+                    <p>Brutalismo web en acción.</p>
+                </div>
+                <div class="project-card">
+                    <div class="image-wrapper"><img src="src/images/guachinche_es.png" alt=""></div>
+                    <h3>Proyecto 9</h3>
+                    <p>Brutalismo web en acción.</p>
+                </div>
+                <div class="project-card">
+                    <div class="image-wrapper"><img src="src/images/japan_es.png" alt=""></div>
+                    <h3>Proyecto 10</h3>
+                    <p>Brutalismo web en acción.</p>
+                </div>
+                <div class="project-card">
+                    <div class="image-wrapper"><img src="src/images/vet_es.png" alt=""></div>
+                    <h3>Proyecto 10</h3>
+                    <p>Brutalismo web en acción.</p>
+                </div>
+            </div>
+            <button id="carousel-next" class="carousel-btn next-btn" aria-label="Siguiente proyecto"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contacto</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Información de Contacto</h3>
+                    <p>Estoy disponible para proyectos freelance o simplemente para charlar sobre tecnología.</p>
+                    <div class="info-item"><i class="fas fa-envelope"></i><div><h4>Email</h4><p>lfumero.dev@example.com</p></div></div>
+                    <div class="info-item"><i class="fas fa-map-marker-alt"></i><div><h4>Ubicación</h4><p>España / Remoto</p></div></div>
+                </div>
+                <div class="contact-form-wrapper glass-card">
+                    <form action="https://formspree.io/f/myknlkkj" method="POST">
+                        <div class="form-group"><label>Nombre</label><input type="text" required placeholder="Tu nombre" name="nombre"></div>
+                        <div class="form-group"><label>Email</label><input type="email" required placeholder="tu@email.com" name="email"></div>
+                        <div class="form-group"><label>Mensaje</label><textarea required placeholder="Cuéntame más..." rows="4" name="mensaje"></textarea></div>
+                        <button type="submit" class="btn btn-primary" style="width:100%; margin-top:1rem;">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div style="font-size:1.5rem; font-weight:700; margin-bottom:1rem;">LF<span style="color:#8b5b3a;">.</span></div>
+            <p>&copy; 2026 LF Portfolio. Versión Estática.</p>
+        </div>
+    </footer>
+
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        if (currentTheme === 'dark') {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
+        
+        themeToggle.addEventListener('click', () => {
+            let theme = document.documentElement.getAttribute('data-theme');
+            if (theme === 'dark') {
+                document.documentElement.setAttribute('data-theme', 'light');
+                localStorage.setItem('theme', 'light');
+            } else {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+
+        // Configuración y Autoplay del Carrusel
+        const track = document.getElementById('project-carousel');
+        const prevBtn = document.getElementById('carousel-prev');
+        const nextBtn = document.getElementById('carousel-next');
+
+        function getScrollAmount() {
+            const card = track.querySelector('.project-card');
+            return card ? card.offsetWidth + 32 : 352;
+        }
+
+        prevBtn.addEventListener('click', () => {
+            track.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' });
+            resetAutoplay();
+        });
+
+        nextBtn.addEventListener('click', () => {
+            track.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
+            resetAutoplay();
+        });
+
+        let autoplayInterval;
+        
+        function startAutoplay() {
+            autoplayInterval = setInterval(() => {
+                if (track.scrollLeft + track.clientWidth >= track.scrollWidth - 10) {
+                    track.scrollTo({ left: 0, behavior: 'smooth' });
+                } else {
+                    track.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
+                }
+            }, 3000);
+        }
+
+        function resetAutoplay() {
+            clearInterval(autoplayInterval);
+            startAutoplay();
+        }
+
+        startAutoplay();
+
+        track.addEventListener('mouseenter', () => clearInterval(autoplayInterval));
+        track.addEventListener('mouseleave', startAutoplay);
+        track.addEventListener('touchstart', () => clearInterval(autoplayInterval), { passive: true });
+        track.addEventListener('touchend', startAutoplay, { passive: true });
+    </script>
+</body>
+</html>
