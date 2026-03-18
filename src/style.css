@@ -154,13 +154,110 @@ section {
 .hero-subtitle { font-family: 'Outfit', sans-serif; font-size: 1.5rem; color: var(--secondary); margin-bottom: 1.5rem; font-weight: 600; display: block; }
 .hero-description { font-size: 1.125rem; color: var(--text-light); margin-bottom: 2.5rem; }
 .hero-actions { display: flex; gap: 1rem; }
-.blob-container { position: relative; width: 350px; height: 350px; display: flex; justify-content: center; align-items: center; }
-.profile-placeholder { position: relative; z-index: 2; width: 280px; height: 280px; border-radius: 50%; background: var(--gradient-warm); display: flex; justify-content: center; align-items: center; }
+.blob-container {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blob-container::before,
+.blob-container::after {
+    content: '';
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    filter: blur(35px);
+    z-index: 0;
+    animation: ovalShadows 12s linear infinite;
+    top: 50%;
+    left: 50%;
+    margin-top: -160px;
+    margin-left: -160px;
+}
+
+.blob-container::before {
+    background: rgba(211, 84, 0, 0.5);
+}
+
+/*animacion del circulo*/
+.blob-container::after {
+    width: 280px;
+    height: 280px;
+    margin-top: -140px;
+    margin-left: -140px;
+    background: rgba(233, 147, 8, 0.3);
+    animation-direction: reverse;
+    animation-duration: 8s;
+}
+
+@keyframes ovalShadows {
+    0% { transform: rotate(0deg) scale(1) translate(15px, 15px); border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+    50% { transform: rotate(180deg) scale(1.1) translate(-15px, -15px); border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%; }
+    100% { transform: rotate(360deg) scale(1) translate(15px, 15px); border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+}
+
+.profile-placeholder { 
+    position: relative; 
+    z-index: 2; 
+    width: 280px; 
+    height: 280px; 
+    border-radius: 50%; 
+    background: var(--gradient-warm); 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.profile-placeholder::before,
+.profile-placeholder::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.profile-placeholder::before {
+    width: 320px;
+    height: 320px;
+    border: 1px dashed rgba(170, 159, 159, 0.5);
+    animation: spinRing 25s linear infinite;
+}
+
+.profile-placeholder::after {
+    width: 380px;
+    height: 380px;
+    border: 1px solid rgba(102, 122, 236, 0.3);
+    animation: spinRingReverse 40s linear infinite;
+}
+
+@keyframes spinRing { 
+    0% { transform: translate(-50%, -50%) rotate(0deg); } 
+    100% { transform: translate(-50%, -50%) rotate(360deg); } 
+}
+
+@keyframes spinRingReverse { 
+    0% { transform: translate(-50%, -50%) rotate(0deg); } 
+    100% { transform: translate(-50%, -50%) rotate(-360deg); } 
+}
+
 .profile-placeholder i { font-size: 5rem; color: white; }
 
 /* ======================== ABOUT ======================== */
+@keyframes softFloat {
+    0% { transform: translateY(0); box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+    50% { transform: translateY(-12px); box-shadow: 0 20px 40px rgba(0,0,0,0.15); }
+    100% { transform: translateY(0); box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+}
+
 .about-content { display: grid; grid-template-columns: 1fr 2fr 1fr; gap: 3rem; align-items: center; }
-.profile-img { width: 100%; max-width: 250px; border-radius: 50%; border: 4px solid white; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+.profile-img { width: 100%; max-width: 250px; border-radius: 50%; border: 4px solid var(--card-bg); animation: softFloat 7s ease-in-out infinite; }
 .about-text p { margin-bottom: 1.5rem; font-size: 1.1rem; }
 .about-stats { display: flex; flex-direction: column; gap: 1.5rem; padding-left: 3rem; border-left: 2px solid rgba(211, 84, 0, 0.1); }
 .stat-number { font-size: 3rem; font-weight: 700; background: var(--gradient-warm); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; line-height: 1; }
