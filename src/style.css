@@ -49,6 +49,7 @@ html {
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
     scroll-padding-top: 80px;
+    overflow-x: hidden;
 }
 
 body {
@@ -57,6 +58,7 @@ body {
     background-color: var(--bg-color);
     line-height: 1.6;
     overflow-x: hidden;
+    width: 100%;
     /*centrar todo*/
     display: flex;
     flex-direction: column;
@@ -788,10 +790,24 @@ section {
     text-align: center;
     scroll-snap-align: end;
     margin-top: 4rem;
+    width: 100%;
 }
 
 /* MEDIA QUERIES BASICAS */
 @media (max-width: 992px) {
+
+    html {
+        scroll-snap-type: none;
+    }
+
+    section {
+        width: 98%;
+        margin: 0 auto;
+        min-height: auto;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        scroll-snap-align: none;
+    }
 
     .hero-container,
     .about-content,
@@ -805,10 +821,19 @@ section {
         justify-content: center;
     }
 
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
     .blob-container,
     .profile-img {
         margin: 0 auto;
         display: block;
+    }
+    
+    .blob-container {
+        transform: scale(0.85);
+        max-width: 100%;
     }
 
     .about-stats {
