@@ -555,6 +555,46 @@ section {
     border-radius: 50px;
 }
 
+/* ======================== DESIGN & MANAGEMENT ======================== */
+.design-tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.design-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    cursor: default;
+}
+
+.design-card img {
+    width: 65px;
+    height: 65px;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.design-card i {
+    transition: transform 0.3s ease;
+}
+
+.design-card:hover img, .design-card:hover i {
+    transform: scale(1.1);
+}
+
+.design-card span {
+    font-weight: 600;
+    font-size: 1.1rem;
+    font-family: 'Outfit', sans-serif;
+    color: var(--text-main);
+}
+
 /* ======================== EXPERIENCE ======================== */
 .timeline {
     position: relative;
