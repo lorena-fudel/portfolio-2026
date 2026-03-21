@@ -38,7 +38,7 @@ Al ser un proyecto puramente estático, no necesitas realizar de instalaciones c
    ```
 2. **Entra al directorio:**
    ```bash
-   cd portfolio-2026/web-estatica
+   cd portfolio-2026/
    ```
 3. **Pruébalo:**
    Simplemente haz doble clic en el archivo `index.html` para que se abra tu navegador predeterminado (o utiliza una extensión como *Live Server* en VSCode para agilizar el desarrollo de futuras versiones).
