@@ -1,10 +1,10 @@
-# 👩‍💻 Lorena F. — Desarrolladora Web & Perfiles Transversales
+# 👩🏻‍💻 Lorena F. — Desarrolladora Web & Perfiles Transversales
 
 > *"No solo escribo código: escucho, entiendo y construyo soluciones que conectan tecnología con personas."*
 
 ---
 
-## 🙋‍♀️ ¿Quién soy?
+## 🙋🏻‍♀️​ ¿Quién soy?
 
 Soy **Lorena**, desarrolladora web fullstack desde **Tenerife, Islas Canarias**, con más de **2 años de experiencia** creando aplicaciones web profesionales. Mi trayectoria combina conocimiento técnico sólido con una fuerte orientación al cliente y una visión estratégica del producto digital.
 
