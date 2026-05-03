@@ -984,3 +984,33 @@ section {
         margin: 1rem 0;
     }
 }
+
+/* ======================== FORM FEEDBACK ANIMATIONS ======================== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#form-success,
+#form-error {
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+/* Validación visual de campos */
+#contact-form input,
+#contact-form textarea {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(139, 91, 58, 0.15);
+    outline: none;
+}
