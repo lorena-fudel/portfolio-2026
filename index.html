@@ -4,7 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LF Portfolio</title>
+    <title>Lorena Fudel | Desarrolladora Web Fullstack · Tenerife</title>
+    <meta name="description" content="Portfolio de Lorena Fudel, desarrolladora web fullstack especializada en Angular, Node.js, WordPress y Drupal. Disponible para proyectos freelance desde Tenerife y en remoto.">
+    <meta name="author" content="Lorena Fudel">
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FXK635HYQD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-FXK635HYQD');
+    </script>
     <!-- Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap"
@@ -61,8 +71,9 @@
                 <p class="hero-description">Estrategia, diseño y código. Creamos junt@s la web que tu proyecto merece.
                 </p>
                 <div class="hero-actions">
-                    <a href="#contact" class="btn btn-primary">Hablemos de tu proyecto</a>
+                    <a href="#contact" class="btn btn-primary" onclick="gtag('event', 'cta_click', {event_category: 'Hero', event_label: 'Hablemos de tu proyecto'})">Hablemos de tu proyecto</a>
                     <a href="#about" class="btn btn-outline">Conóceme más</a>
+                    <a href="cv_lorena_informatica.pdf" download="CV_Lorena_Fudel.pdf" class="btn btn-cv" onclick="gtag('event', 'cv_download', {event_category: 'Hero', event_label: 'Descarga CV'})"><i class="fas fa-file-download"></i> Descargar CV</a>
                 </div>
             </div>
             <div class="hero-visual">
@@ -93,6 +104,9 @@
                     </div>
                     <div class="stat-item"><span class="stat-number">100%</span><span
                             class="stat-label">Compromiso</span></div>
+                </div>
+                <div style="margin-top: 1.5rem;">
+                    <a href="cv_lorena_informatica.pdf" download="CV_Lorena_Fudel.pdf" class="btn btn-cv" onclick="gtag('event', 'cv_download', {event_category: 'About', event_label: 'Descarga CV'})"><i class="fas fa-file-download"></i> Descargar CV</a>
                 </div>
             </div>
         </div>
@@ -578,7 +592,7 @@
                     </div>
                 </div>
                 <div class="contact-form-wrapper glass-card">
-                    <form action="https://formspree.io/f/myknlkkj" method="POST">
+                    <form action="https://formspree.io/f/myknlkkj" method="POST" onsubmit="gtag('event', 'contact_form_submit', {event_category: 'Contact', event_label: 'Formulario enviado'})">
                         <div class="form-group"><label>Nombre</label><input type="text" required placeholder="Tu nombre"
                                 name="nombre"></div>
                         <div class="form-group"><label>Email</label><input type="email" required
